@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-permalink: /about/
+permalink: /contact/
 ---
 Hi, I'm Fer!
 
