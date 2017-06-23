@@ -39,3 +39,5 @@ gems:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+permalink: /:year/:month/:day/:title.html

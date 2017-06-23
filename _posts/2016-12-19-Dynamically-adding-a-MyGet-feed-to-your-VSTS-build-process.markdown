@@ -2,7 +2,7 @@
 layout: post
 title:  "Dynamically adding a MyGet feed to your VSTS build process"
 date:   2016-12-19 16:53:56 +0200
-categories: vsts
+categories: build myget vsts
 ---
 # Overview
 
