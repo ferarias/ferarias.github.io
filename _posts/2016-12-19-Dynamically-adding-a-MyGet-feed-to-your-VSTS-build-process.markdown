@@ -226,3 +226,5 @@ finally
 Write-Verbose "Leaving script $MyInvocation.MyCommand.Name"
 
 {% endhighlight %}
+
+That's all! Thanks for reading.
