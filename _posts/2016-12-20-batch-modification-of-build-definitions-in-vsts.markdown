@@ -41,7 +41,7 @@ namespace Toolfactory.Vsts.BuidDefinitionProcessor
         }
     }
 }
-{% endhighlight }
+{% endhighlight %}
 
 Now, we will obtain all the projects in your Visual Studio Team Services instance. We have to create a client using the connection and then send a query:
 
@@ -74,7 +74,7 @@ namespace Toolfactory.Vsts.BuidDefinitionProcessor
         }
     }
 }
-{% endhighlight }
+{% endhighlight %}
 
 Now we will traverse all projects looking for build definitions. Notice that buildClient.GetDefinitionsAsync() gets build reference items. These items don't contain all the information of the build definition, just some basic data. To obtain the full build definition you have to invoke buildClient.GetDefinitionAsync() passing the definitionReference.Id.
 
@@ -116,7 +116,7 @@ namespace Toolfactory.Vsts.BuidDefinitionProcessor
         }
     }
 }
-{% endhighlight }
+{% endhighlight %}
 
 Now that we have the build definitions, we can process them in any way we want. Once we have modified the build definition, we save the changes by sending a request to the API with the method
 
@@ -124,7 +124,7 @@ Now that we have the build definitions, we can process them in any way we want. 
 await buildClient.UpdateDefinitionAsync(definition, 
   definitionId: definitionReference.Id,
   project: teamProjectReference.Id);
-{% endhighlight }
+{% endhighlight %}
 
 For example, the following code adds two variables to the build definition that can be used for setting MyGet credentials:
 
@@ -147,7 +147,7 @@ foreach (var definitionReference in definitionReferences)
 
   await buildClient.UpdateDefinitionAsync(definition, definitionId: definitionReference.Id, project: teamProjectReference.Id);
 }
-{% endhighlight }
+{% endhighlight %}
 
 The following code reorders steps so that an specific step is always in the first position.
 
@@ -202,7 +202,7 @@ var definition =
       await
           buildClient.UpdateDefinitionAsync(definition, definitionId: definitionReference.Id,
               project: teamProjectReference.Id);
-{% endhighlight }
+{% endhighlight %}
 
 Enjoy!
 
