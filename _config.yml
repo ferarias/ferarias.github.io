@@ -1,25 +1,2 @@
-title: Fer on software
-email: fernando@ariasmarques.com
-description: > # this means to ignore newlines until "baseurl:"
-  A developer's life. My thoughts and experiences in my life as a software developer.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fernando.ariasmarques.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ferarias
-github_username:  ferarias
-
-# Build settings
 theme: jekyll-theme-minimal
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
 permalink: /:year/:month/:day/:title.html
