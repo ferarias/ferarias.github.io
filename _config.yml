@@ -13,13 +13,13 @@ blog_more_posts: 5
 prettify_theme: "ghink"
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 paginate: 3
 paginate_path: "blog/page/:num"
 permalink: /:year/:month/:day/:title.html
 timezone: Europe/Madrid
-redcarpet:
+kramdown:
   extensions:
     - hard_wrap
     - no_intra_emphasis
