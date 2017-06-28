@@ -1,24 +1,39 @@
 ---
-layout: default
+layout: naked
+title: Not found
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<div class="column-group">
 
-<div class="container">
-  <h1>404</h1>
+    <div class="all-100 medium-100 small-100 content-center vspace">
 
-  <p><strong>Oops! I did it again :(</strong></p>
-  <p>The requested page could not be found.</p>
+    <br/><br/><br/><br/><br/><br/>
+
+    <h1>Issue #404 pulled.</h1>
+
+    </div>
+
 </div>
+
+{% comment %}
+
+Use the redirects js array to make sure you redirect your old website structure to the new one, if needed.
+
+{% endcomment %}
+
+<script type="text/javascript">
+    var redirects={
+        '/oldsectionurl.html': '/newsection/',
+        '/oldcontactsurl.html': '/newcontactsurl.html'
+     }
+
+    for (var url in redirects) {
+      if (redirects.hasOwnProperty(url)) { 
+        if(window.location.pathname==url) {
+            window.location = redirects[url];
+        }
+      }
+    }
+
+    setTimeout(function () { window.location = '/'; },10000);
+</script>
