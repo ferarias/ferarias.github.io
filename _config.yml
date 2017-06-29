@@ -44,3 +44,9 @@ plugins:
 permalink: /:year/:month/:day/:title.html
 ga_domain: "fernando.ariasmarques.com"
 ga_id: "UA-909686-4"
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
