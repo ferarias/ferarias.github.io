@@ -42,9 +42,7 @@ plugins:
 #   - vendor/ruby/
 
 permalink: /:year/:month/:day/:title.html
-ga_domain: "fernando.ariasmarques.com"
-ga_id: "UA-909686-4"
-
+site.google_analytics: "UA-909686-4"
 defaults:
   - scope:
       path: "assets/img"
